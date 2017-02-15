@@ -13,6 +13,7 @@
 		435317541E53D1BA00A2AC4F /* S400_Aula02_CadastroSQLite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 435317521E53D1BA00A2AC4F /* S400_Aula02_CadastroSQLite.xcdatamodeld */; };
 		435317561E53D1BA00A2AC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435317551E53D1BA00A2AC4F /* Assets.xcassets */; };
 		435317591E53D1BA00A2AC4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435317571E53D1BA00A2AC4F /* LaunchScreen.storyboard */; };
+		435317621E53D7F200A2AC4F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 435317611E53D7F200A2AC4F /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		435317551E53D1BA00A2AC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435317581E53D1BA00A2AC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4353175A1E53D1BA00A2AC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435317611E53D7F200A2AC4F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		435317631E53D89200A2AC4F /* S400_Aula02_CadastroSQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "S400_Aula02_CadastroSQLite-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435317621E53D7F200A2AC4F /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				4353174A1E53D1BA00A2AC4F /* S400_Aula02_CadastroSQLite */,
 				435317491E53D1BA00A2AC4F /* Products */,
+				435317601E53D7F200A2AC4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +68,17 @@
 				435317571E53D1BA00A2AC4F /* LaunchScreen.storyboard */,
 				4353175A1E53D1BA00A2AC4F /* Info.plist */,
 				435317521E53D1BA00A2AC4F /* S400_Aula02_CadastroSQLite.xcdatamodeld */,
+				435317631E53D89200A2AC4F /* S400_Aula02_CadastroSQLite-Bridging-Header.h */,
 			);
 			path = S400_Aula02_CadastroSQLite;
+			sourceTree = "<group>";
+		};
+		435317601E53D7F200A2AC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435317611E53D7F200A2AC4F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +113,7 @@
 				TargetAttributes = {
 					435317471E53D1BA00A2AC4F = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,10 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = S400_Aula02_CadastroSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.quaddro.com.S400-Aula02-CadastroSQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "S400_Aula02_CadastroSQLite/S400_Aula02_CadastroSQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,10 +294,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = S400_Aula02_CadastroSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.quaddro.com.S400-Aula02-CadastroSQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "S400_Aula02_CadastroSQLite/S400_Aula02_CadastroSQLite-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
